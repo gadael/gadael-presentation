@@ -1,56 +1,93 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="node_modules/reveal.js/css/reveal.css">
-		<link rel="stylesheet" href="node_modules/reveal.js/css/theme/white.css">
+		<link rel="stylesheet" href="node_modules/reveal.js/css/theme/black.css">
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 
-				<section data-markdown>
-					<script type="text/template">
-						<!-- .slide: data-background="#fff" -->
+				<section data-background-color="#fff">
+					<h2>Gadael</h2>
+					<p>Gestion des congés et du temps de travail</p>
+					<img style="width:25%" src="medias/logoCenter410.png" class="plain" />
+					<ul>
+						<li>Hébergement SaaS <a href="https://www.gadael.com">https://www.gadael.com</a></li>
+						<li>Open source <a href="http://www.gadael.org">http://www.gadael.org</a></li>
+					</ul>
 
-						# Gadael
-						Gestion des congés et du temps de travail
-
-						* Hébergement SaaS https://www.gadael.com
-						* Open source http://gadael.org
-
-
-					</script>
 				</section>
 
-				<section data-markdown>
-					<script type="text/template">
-						<!-- .slide: data-background="#fff" -->
+				<section>
+					<section>
+						<h2>Actions des utilisateurs</h2>
 
-						## Actions des utilisateurs, que peuvent ils demmander?
+						<dl>
+							<dt>Les types de demandes possibles :<dt>
 
-						_Les types de demandes possibles :_
+							<dd>❶ Absence.</dd>
+							<dd>❷ Récupération des heures supplémentaires.</dd>
+							<dd>❸ Épargner des jours de congés sur un compte épargne temps.</dd>
+						</dl>
+					</section>
 
-						---
+					<section>
+						<h3>❶ Absence</h3>
+						<p>Etape 1: choix de la période d'absence</p>
+						<p>Etape 2: répartition de la durée sur les droits de congés</p>
+					</section>
 
-						Demander un absence.
+					<section>
+						<h3>❷ Récupération des heures supplémentaires</h3>
+						<p>Déclaration d'une période travaillée en dehors des heures de travail du contrat</p>
+						<p>Après approbation, un nouveau droit compensatoire sera octroyé</p>
+					</section>
 
-						---
+					<section>
+						<h3>❸ Épargner des jours de congés sur un compte épargne temps.</h3>
+						<p>permettre au salarié d’accumuler des droits à congé rémunéré ou
+							de bénéficier d’une rémunération, immédiate ou différée, en contrepartie
+							des périodes de congé ou de repos non prises ou des sommes qu’il y a affectées.</p>
+					</section>
 
-						Déclarer une période travaillée donnat droit à récupération
-						sous la forme de congés supplémentaire.
-
-						---
-
-						Épargner des jours de congés sur un compte épargne temps.
-
-					</script>
 				</section>
+
+				<section>
+					<section>
+						<h2>Approbation des demandes</h2>
+						<ul>
+							<li>L'administrateur défini des services de façon hiérarchique</li>
+							<li>Chaque chef de service doit valider les demandes des membres de son service et des sous-services</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>L'approbateur</h2>
+						<p>Reçoit une notification par mail avec un lien vers la liste des demandes en attente</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>Paramétrage des temps partiels</h2>
+					<p>L'administrateur peut créer autant de droits de que de régimes à temps partiels.</p>
+					<p>&nbsp;&nbsp; &nbsp;Ou</p>
+					<p>Paramétrer la consomation sur les droits en prenant en compte les options du régime.</p>
+				</section>
+
+
+
+
 			</div>
 		</div>
 		<script src="node_modules/reveal.js/js/reveal.js"></script>
-		<script src="node_modules/reveal.js/plugin/markdown/marked.js"></script>
-  		<script src="node_modules/reveal.js/plugin/markdown/markdown.js"></script>
 		<script>
-			Reveal.initialize();
+			Reveal.initialize({
+				// Transition style
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// Transition style for full page slide backgrounds
+				backgroundTransition: 'convex' // none/fade/slide/convex/concave/zoom
+			});
 		</script>
 	</body>
 </html>
