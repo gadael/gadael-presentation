@@ -1,0 +1,6 @@
+{
+  "name": "gadael-presentation",
+  "dependencies": {
+    "reveal.js": "^3.5.0"
+  }
+}
